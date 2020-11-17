@@ -1,17 +1,23 @@
 <?php
-require_one('connexion.php');
+require_once('connexion.php');
 
 class Recipe extends Connexion
 {
-    function rondom(){
-
-    
-    $a = 5;
-    $bdd= mysql_query("SELECT * FROM recettes ORDER BY rand() LIMIT $a");
-    while ($row = mysql_fetch_array($requete))   {
-      
+public function allrecipes()
+    {
+        $recipes = $this->connect()->prepare('SELECT * FROM recettes');
+        $recipes->execute();
+        $result = $recipes->fetchAll();
+        return $result;
+    }
+public function random()
+    {
+    $recipes = $this->connect()->prepare('SELECT * FROM recettes WHERE id_recettes order by rand() LIMIT 5' );
+    $recipes->execute();
+    $result = $recipes->fetchAll();
+    return $result;
     }
 }
-}
+
 
 ?>

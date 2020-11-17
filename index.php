@@ -1,9 +1,10 @@
 <?php
-if (isset($_GET['action'])){
-    echo 'on a une action';
+require_once('controler/controler.php');
+if (isset($_GET['action'])&&($_GET['action']=='all')){
+    showallrecipes();
 }
 else{
-    include'vue/accueil.php';
+    showfiverecipes();
 }
 
 ?>

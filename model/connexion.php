@@ -1,7 +1,7 @@
 <?php
-abstract class connexion()
+abstract class Connexion
 {
-    private function connect()
+    protected function connect()
         {
         try
         {
@@ -14,7 +14,7 @@ abstract class connexion()
             die('Erreur : '.$e->getMessage());
         }
         }
-    private function refresh($url)
+    protected function refresh($url)
         {
         echo '<script language="Javascript">
         document.location.replace("'.$url.'");
