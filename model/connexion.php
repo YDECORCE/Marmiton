@@ -1,7 +1,7 @@
 <?php
-abstract class connexion()
+abstract class Connexion
 {
-    private function connect()
+    protected function connect()
         {
         try
         {
