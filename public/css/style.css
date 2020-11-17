@@ -34,9 +34,11 @@
   /* Fake image */
   .fakeimg {
     background-color: #aaa;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    
     padding: 2px;
-    height:450px;
+    
   }
   
   /* Add a card effect for articles */
