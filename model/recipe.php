@@ -1,6 +1,8 @@
 <?php
+require_one('connexion.php');
 
-class Recipe{
+class Recipe extends connexion
+{
 
 }
 
