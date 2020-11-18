@@ -18,6 +18,7 @@
 <div class="row">
 <?php
     if(!empty($loopfiverecipes)){echo $loopfiverecipes;}
+    if(!empty($cequilfautafficher)){echo $cequilfautafficher;}
     ?>
 </div>
 

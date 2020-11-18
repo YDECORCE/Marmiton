@@ -12,5 +12,12 @@ function showfiverecipes(){
     $fiverecipes=$fiverecipes->random();
     require('vue\recipeoftheday.php');
 }
-
+function showrecipedetail(){
+    $id=$_GET['id'];
+    $recipedetail= new recipe;
+    $recipedetail= $recipedetail->detailonerecipe($id);
+    $recipeingredient=new recipe;
+    $recipeingredient =$recipeingredient->onerecipeingredient($id);
+    require('vue/onerecipe.php');
+}
 ?>

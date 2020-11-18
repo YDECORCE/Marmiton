@@ -3,7 +3,11 @@ require_once('controler/controler.php');
 if (isset($_GET['action'])&&($_GET['action']=='all')){
     showallrecipes();
 }
-else{
+elseif (isset($_GET['action'])&&($_GET['action']=='detail')){
+    showrecipedetail();
+}
+else
+{
     showfiverecipes();
 }
 
