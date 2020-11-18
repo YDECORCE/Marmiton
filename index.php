@@ -6,6 +6,9 @@ if (isset($_GET['action'])&&($_GET['action']=='all')){
 elseif (isset($_GET['action'])&&($_GET['action']=='detail')){
     showrecipedetail();
 }
+elseif (isset($_GET['action'])&&($_GET['action']=='search')){
+    searchrecipe();
+}
 else
 {
     showfiverecipes();

@@ -9,7 +9,6 @@ echo $data['cout_recettes'];
 $nbredepersonne=$data['nombre_personnes'];
 echo $data['nombre_personnes'];
     }
-
 $nbrepersonneajust=12;
 echo $nbrepersonneajust;
 echo'<h5>la liste des ingrédients</h5>';
