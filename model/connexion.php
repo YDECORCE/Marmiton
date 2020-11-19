@@ -14,7 +14,7 @@ abstract class Connexion
             die('Erreur : '.$e->getMessage());
         }
         }
-    private function refresh($url)
+    protected function refresh($url)
         {
         echo '<script language="Javascript">
         document.location.replace("'.$url.'");
