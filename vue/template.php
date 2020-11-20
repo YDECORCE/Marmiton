@@ -59,9 +59,10 @@
     </ul>
     <!-- Links -->
 
-    <form class="form-inline">
+    <form method="GET" class="form-inline">
       <div class="md-form my-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <input class="form-control mr-sm-2"  name="text"   placeholder="Search" aria-label="Search">
+       <button class="btn"  type="submit" name="action"  value="rechercher" > </button>
       </div>
     </form>
   </div>
@@ -78,6 +79,9 @@
 <div class="row">
 <?php
     if(!empty($loopfiverecipes)){echo $loopfiverecipes;}
+    if(!empty($onerecipe)){echo $onerecipe;}
+    if(!empty($searchrecipe)){echo$searchrecipe;}
+    // if(!empty($cequilfautafficher)){echo $cequilfautafficher;}
     ?>
 </div>
 
