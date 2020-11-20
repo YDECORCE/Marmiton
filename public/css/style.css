@@ -6,7 +6,7 @@
   body {
     font-family: Arial;
     padding: 20px;
-    background: #f1f1f1;
+    background: #343a40;
   }
   
   /* Header/Blog Title */
@@ -41,8 +41,8 @@
    
   }
   a {
-    padding: 20px;
-    margin: 10px;
+    /* padding: 20px;
+    margin: 10px; */
     
     font-family: 'Architects Daughter', cursive;
     font-size: 1.7rem;
@@ -81,7 +81,7 @@
     float: left;
     width: 60%;
     max-height:100% ;
-    margin-top: 350px;
+    /* margin-top: 350px; */
     
   }
   
@@ -90,7 +90,7 @@
     float: left;
    width: 40%;
     padding-left: 20px;
-    margin-top: 350px;
+    /* margin-top: 350px; */
   }
   
   /* Fake image */
@@ -105,7 +105,7 @@
   .card {
      background-color: white;
      padding: 20px;
-     margin-top: 50px;
+     margin-bottom: 50px;
     
      
   }
@@ -128,9 +128,9 @@
   .container{
     max-width: 1290px;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     align-content: center;
-    background-color: #f1f1f1;
+    background-color:  #343a40;
     /* background-image: url("public/img/pizza.jpg");     */
     
   }
@@ -177,7 +177,18 @@
   -webkit-border-radius: 5px 5px 5px 5px;
   border: 1px solid #000000;
 }
-
+.allrecipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.fiche{
+  width: 550px;
+  background-color: white;
+  height: 400px;
+  /* align-items: flex-end; */
+  margin: 10px;
+}
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {

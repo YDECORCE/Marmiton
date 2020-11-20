@@ -1,5 +1,14 @@
 <?php
 ob_start();
+$url=$_SERVER['REQUEST_URI'];
+// echo $url;
+$url=substr($url,27);
+// echo '<br/>'.$url;
+// echo '<br/>';
+// echo $url;
+// $url=rawurldecode($url);
+// echo '<br/>';
+// echo $url;
 echo"<div class='container'>";
 
 foreach ($recipedetail as $data)
@@ -21,12 +30,16 @@ foreach ($recipedetail as $data)
     $nbredepersonne=$data['nombre_personnes'];
 
     }
-$nbrepersonneajust=$nbredepersonne;
+    if (isset($_GET['nbrpers'])){
+$nbrepersonneajust=$_GET['nbrpers'];}
+else {$nbrepersonneajust=$nbredepersonne;}
+
 echo"<div class='ingredient'>
-<form method='get' action='index.php?action=detail&id=8&'>
+<form method='get' action='index.php'>
+<input hidden name='action' value=".rawurlencode($url).">
 <label for='nbrepers'>Nombre de Personne</label>
-<input type='range' name='nbrpers' value='".$nbredepersonne."' min='1' max='12' id='nbrepers' oninput='this.nextElementSibling.value = this.value'>
-<output>".$nbredepersonne."</output>
+<input type='range' name='nbrpers' value='".$nbrepersonneajust."' min='1' max='12' id='nbrepers' oninput='this.nextElementSibling.value = this.value'>
+<output>".$nbrepersonneajust."</output>
 <button type='submit' name='calcul' value='calc'>Calculer</button>
 </form>";
 
