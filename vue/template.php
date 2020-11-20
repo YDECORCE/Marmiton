@@ -32,12 +32,12 @@
 
     <div class="header" style="height:700px">
       <video autoplay loop muted>
-        <source src="public/img/Food.mp4" type="video/mp4" style=width:100vw;> </video>
+        <source src="public/img/Food.mp4" type="video/mp4" style=width:500vw;> </video>
       <!--Navbar-->
       <nav class="navbar navbar-expand-lg bg-dark ">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="index.php"><img src="public/img/chef.png" width="50" height="60" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="public/img/chef.png" width="50" height="60" alt=""></a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -66,34 +66,30 @@
           </ul>
           <!-- Links -->
 
-          <form class="form-inline">
+          <form method="GET" class="form-inline">
             <div class="md-form my-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <input class="form-control mr-sm-2" name="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit" name="action" value="rechercher">valider</button>
             </div>
           </form>
         </div>
         <!-- Collapsible content -->
 
-      </nav>
-    </div>
+</header>
 
-  </header>
-
-
-
-
-  <div class="rowe">
-    <?php
+        <div class="rowe">
+          <?php
     if(!empty($loopfiverecipes)){echo $loopfiverecipes;}
     if(!empty($loopallrecipes)){echo $loopallrecipes;}
     if(!empty($onerecipe)){echo $onerecipe;}
+    if(!empty($searchrecipe)){echo$searchrecipe;}
     // if(!empty($cequilfautafficher)){echo $cequilfautafficher;}
     ?>
-  </div>
+        </div>
 
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
+        <div class="footer">
+          <h2>Footer</h2>
+        </div>
 </body>
 
 </html>
