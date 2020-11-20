@@ -82,7 +82,7 @@
 
 
 
-  <div class="row">
+  <div class="rowe">
     <?php
     if(!empty($loopfiverecipes)){echo $loopfiverecipes;}
     if(!empty($loopallrecipes)){echo $loopallrecipes;}

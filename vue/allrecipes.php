@@ -1,7 +1,7 @@
 <?php
 ob_start();
 
-echo'<div class="container allrecipes">';
+echo'<h2>Toutes nos recettes.</h2><div class="container allrecipes">';
 foreach ($recipes as $data){
     echo"<div class='fiche'>
         <a href='index.php?action=detail&id=".$data['id_recettes']."'>".$data['nom_recettes']."</a>

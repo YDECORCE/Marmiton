@@ -56,7 +56,7 @@
     background: orange;
     text-decoration:none;
     animation-name: example;
-    animation-duration: 3s;
+    animation-duration: 1s;
   }
   @keyframes example {
     from {background-color: red;}
@@ -112,7 +112,7 @@
   
   
   /* Clear floats after the columns */
-  .row:after {
+  .rowe:after {
     content: "";
     display: table;
     clear: both;
@@ -185,8 +185,9 @@
 .fiche{
   width: 550px;
   background-color: white;
-  height: 400px;
+  height: 440px;
   /* align-items: flex-end; */
+  padding: 20px;
   margin: 10px;
 }
 
@@ -201,6 +202,8 @@
      h2{
        color:white;
        font-size: 50px;
+       font-family: 'Architects Daughter', cursive;
+       text-align: center;
      }
      p{
 

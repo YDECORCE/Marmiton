@@ -13,6 +13,7 @@ echo"<div class='container'>";
 
 foreach ($recipedetail as $data)
     {
+        $text=str_replace ("/*","</p><p>",$data['recette_recettes']);
         echo"<div class='container'>
     <h2>".$data['nom_recettes']."</h2>
     <div class='propimage'>
@@ -25,7 +26,7 @@ foreach ($recipedetail as $data)
         <p>Coût : ".$data['cout_recettes']."</p>
     </div>
     <div class='recette'>
-        <p>".$data['recette_recettes']."</p>
+        <p>".$text."</p>
     </div>";
     $nbredepersonne=$data['nombre_personnes'];
 
