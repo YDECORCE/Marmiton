@@ -21,11 +21,6 @@
 
 </head>
 
-
-
-</style>
-</head>
-
 <body>
   <header>
 
@@ -37,7 +32,7 @@
       <nav class="navbar navbar-expand-lg bg-dark ">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="#"><img src="public/img/chef.png" width="50" height="60" alt=""></a>
+        <a class="navbar-brand" href="index.php"><img src="public/img/chef.png" width="50" height="60" alt=""></a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -82,8 +77,9 @@
     if(!empty($loopfiverecipes)){echo $loopfiverecipes;}
     if(!empty($loopallrecipes)){echo $loopallrecipes;}
     if(!empty($onerecipe)){echo $onerecipe;}
-    if(!empty($searchrecipe)){echo$searchrecipe;}
-    // if(!empty($cequilfautafficher)){echo $cequilfautafficher;}
+    if(!empty($searchrecipe)){echo $searchrecipe;}
+    if(!empty($searcherror)){echo $searcherror;}
+    
     ?>
         </div>
 

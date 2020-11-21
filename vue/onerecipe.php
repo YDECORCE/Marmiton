@@ -1,14 +1,6 @@
 <?php
 ob_start();
-$url=$_SERVER['REQUEST_URI'];
-// echo $url;
-$url=substr($url,27);
-// echo '<br/>'.$url;
-// echo '<br/>';
-// echo $url;
-// $url=rawurldecode($url);
-// echo '<br/>';
-// echo $url;
+$id=$_GET['id'];
 echo"<div class='container'>";
 
 foreach ($recipedetail as $data)
@@ -37,7 +29,8 @@ else {$nbrepersonneajust=$nbredepersonne;}
 
 echo"<div class='ingredient'>
 <form method='get' action='index.php'>
-<input hidden name='action' value=".rawurlencode($url).">
+<input hidden name='action' value='detail'>
+<input hidden name='id' value=".$id.">
 <label for='nbrepers'>Nombre de Personne</label>
 <input type='range' name='nbrpers' value='".$nbrepersonneajust."' min='1' max='12' id='nbrepers' oninput='this.nextElementSibling.value = this.value'>
 <output>".$nbrepersonneajust."</output>
@@ -50,7 +43,7 @@ foreach ($recipeingredient as $data)
 
     echo "<p>".$data['nom_ingredients'].' : '.$quantite.' '.$data['unite_make'].'</p>';
     }
-    echo"</div>";
+    echo"</div></div></div>";
     $onerecipe =  ob_get_clean();
     require_once('template.php');
  ?>

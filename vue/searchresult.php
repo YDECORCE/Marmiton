@@ -1,9 +1,8 @@
 <?php
-
-
-
 ob_start();
+$search=$_GET['text'];
 
+echo "<h2> Voici les résultats pour la recherche : ".$search."</h2>";
 echo'<div class="container allrecipes">';
 foreach ($findrecipe as $data){
     echo"<div class='fiche'>

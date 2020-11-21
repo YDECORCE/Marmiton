@@ -128,7 +128,7 @@
   .container{
     max-width: 1290px;
     margin: 0 auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     align-content: center;
     background-color:  #343a40;
     /* background-image: url("public/img/pizza.jpg");     */
