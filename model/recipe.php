@@ -13,7 +13,7 @@ function allrecipes()
     }
 public function random()
     {
-    $recipes = $this->connect()->prepare('SELECT * FROM recettes WHERE id_recettes order by rand() LIMIT 5' );
+    $recipes = $this->connect()->prepare('SELECT * FROM recettes WHERE id_recettes order by rand() LIMIT 3' );
     $recipes->execute();
     $result = $recipes->fetchAll();
     return $result;

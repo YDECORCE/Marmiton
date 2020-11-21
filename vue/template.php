@@ -10,13 +10,17 @@
   <title>A l'ardoise</title>
 </head>
 <body>
-  
+  <?php
+    
+    if((date('H')>13)&&(date('H')<=23)) {$logo="A l'ardoise, ce soir...";}else{$logo="A l'ardoise, ce midi...";}
+    
+  ?>
 <header>
        <!--Navbar-->
       <nav class="navbar navbar-expand-lg">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand mt-5" href="index.php"><h1>A l'ardoise, ce soir...</h1></a>
+        <a class="navbar-brand mt-5" href="index.php"><h1><?php echo $logo; ?></h1></a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
