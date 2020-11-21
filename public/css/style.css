@@ -2,11 +2,43 @@
     box-sizing: border-box;
   }
   
+
+@font-face {
+  font-family: 'chalkpaintmedium';
+  src: url('chalkpaint-webfont.woff2') format('woff2'),
+       url('chalkpaint-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
   /* Add a gray background color with some padding */
+
   body {
     font-family: Arial;
     padding: 20px;
-    background: #343a40;
+    background-image: url(../img/halloween-party.jpg);   
+  }
+
+  h1{
+    font-family: chalkpaintmedium;
+    font-size: 80px;
+    font-weight: bolder;
+    color: whitesmoke;
+  }
+  li .nav-link{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  .menu{
+    width: 100%;
+    padding-left: 450px;
+  
+  }
+  .fakeimg{
+    width:100%;
+    height :600px; 
+    display:block
   }
   
   /* Header/Blog Title */
@@ -17,29 +49,13 @@
     
     z-index: 3;
   }
-  video{
   
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 100%;
-    height: 100%; */
-    min-width: 100%;
-   max-height: 65%;
-    z-index:-3;
-    object-position: center;
-    object-fit: cover;
-  }
   .navbar{
     margin-top: -40px;
+    flex-wrap: wrap;
   }
-  .nav-link {
+     
 
-    color:white;
-    font-size: 2rem;
-    font-family: 'Architects Daughter', cursive;
-   
-  }
   a {
     /* padding: 20px;
     margin: 10px; */
@@ -49,59 +65,17 @@
     
     color:black;
    
-  }
-  a:hover{
-
-     
-    background: orange;
-    text-decoration:none;
-    animation-name: example;
-    animation-duration: 1s;
-  }
-  @keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-  }
-  
- 
- .nav-item :hover{
-
-     
-    background: orange;
-  }
-  
- 
-  
- 
- 
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 60%;
-    max-height:100% ;
-    /* margin-top: 350px; */
+  } 
     
-  }
+ 
+ 
   
-  /* Right column */
-  .rightcolumn {
-    float: left;
-   width: 40%;
-    padding-left: 20px;
-    /* margin-top: 350px; */
-  }
+ 
+ 
   
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-   max-width: 100%;
-    
+  
    
-   }
   
-  /* Add a card effect for articles */
   .card {
      background-color: white;
      padding: 20px;
@@ -125,13 +99,13 @@
     background: #ddd;
     margin-top: 20px;
   }
-  .container{
+  /* .container{
     max-width: 1290px;
     margin: 0 auto;
     /* min-height: 100vh; */
     align-content: center;
     background-color:  #343a40;
-    /* background-image: url("public/img/pizza.jpg");     */
+    background-image: url("public/img/pizza.jpg");     */
     
   }
   .propimage{
