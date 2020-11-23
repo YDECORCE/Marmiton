@@ -1,5 +1,6 @@
 <?php
 require_once('model/recipe.php');
+require_once('model/ingredient.php');
 
 function showallrecipes(){
     $recipes=new Recipe;
@@ -28,5 +29,22 @@ function searchrecipe(){
     require('vue/searchresult.php');
     }
     else{ require('vue/erreur.php');}
+}
+function ShowIngredientletters(){
+    $letters=new Ingredient;
+    $letters=$letters->IngredientLetter();
+    require('vue/searchbyingredient.php');
+}
+function ShowIngredient(){
+    $letter=$_GET['letter'];
+    $ingredient=new Ingredient;
+    $ingredient=$ingredient->ShowIngredient($letter);
+    require('vue/showsearchingingredient.php');
+}
+function searchrecipebyingredient(){
+    $id=$_GET['id'];
+    $findrecipe=new Recipe;
+    $findrecipe=$findrecipe->SearchRecipesbyIngredient($id);
+    require('vue/searchresult.php');
 }
 ?>

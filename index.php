@@ -9,6 +9,15 @@ elseif (isset($_GET['action'])&&($_GET['action']=='detail')){
 elseif (isset($_GET['action'])&&($_GET['action']=='rechercher')){
     searchrecipe();
 }
+elseif(isset($_GET['action'])&&($_GET['action']=='searchingredient')&&(!isset($_GET['letter']))){
+    ShowIngredientletters();
+}
+elseif(isset($_GET['action'])&&($_GET['action']=='searchingredient')&&(isset($_GET['letter']))&&!empty($_GET['letter'])){
+    ShowIngredient();
+}
+elseif (isset($_GET['action'])&&($_GET['action']=='recipebyingredient')){
+    searchrecipebyingredient();
+}
 else
 {
     showfiverecipes();

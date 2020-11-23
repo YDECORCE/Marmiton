@@ -44,7 +44,7 @@
              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recherche par ingrédient</a>
+              <a class="nav-link" href="index.php?action=searchingredient">Recherche par ingrédient</a>
             </li>
           </ul>
           <!-- Links -->

@@ -47,5 +47,16 @@ function searchrecipes($search)
     $result = $req->fetchAll();
     return $result; 
     }
+function SearchRecipesbyIngredient($ingredient)
+    {
+    $req = $this->connect()->prepare('SELECT * FROM recettes
+    INNER join make on recettes.id_recettes=make.id_recettes
+    inner join ingredients on make.id_ingredients=ingredients.id_ingredients
+    where ingredients.id_ingredients=:id');
+    $req->bindParam(':id', $ingredient, PDO::PARAM_INT);
+    $req->execute();
+    $result = $req->fetchAll();
+    return $result; 
+    }
 }   
 ?>
