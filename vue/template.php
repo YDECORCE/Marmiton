@@ -72,9 +72,9 @@
     if(!empty($letteringredient)){echo $letteringredient;}
     
     ?>
-<div class="footer">
+<footer>
           <h2>Footer</h2>
-        </div>
+</footer>
 </body>
 
 </html>

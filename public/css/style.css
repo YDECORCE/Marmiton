@@ -25,7 +25,7 @@
     font-weight: bolder;
     color: whitesmoke;
   }
-  li .nav-link{
+  li .nav-link  {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     color: whitesmoke;
@@ -41,19 +41,20 @@
     display:block;
   }
   
-  /* Header/Blog Title */
+  /* Header/Blog Title
   .header {
     padding: 30px;
     font-size: 40px;
     text-align: center;
     
     z-index: 3;
-  }
+  } */
   
   .navbar{
     margin-top: -40px;
     flex-wrap: wrap;
   }
+
   a {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.7rem;
@@ -63,6 +64,7 @@
   .letter a{ 
     color:white ;
   } 
+
   .ficheingredient a{
     font-size: 1.2rem;
     text-align: center;
@@ -85,14 +87,14 @@
   
   
   /* Clear floats after the columns */
-  .rowe:after {
+  /* .rowe:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
   
   /* Footer */
-  .footer {
+  footer {
     padding: 20px;
     text-align: center;
     background: #ddd;
@@ -101,12 +103,12 @@
   /* .container{
     max-width: 1290px;
     margin: 0 auto;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     align-content: center;
     background-color:  #343a40;
-    background-image: url("public/img/pizza.jpg");     */
-    
-  }
+    background-image: url("public/img/pizza.jpg");
+  } */
+
   .propimage{
     width :100%;
     /* justify-content: center; */
@@ -118,7 +120,7 @@
     justify-content: space-around;
     margin :20px 5px 5px 5px;
   }
-.inforecette{
+  .inforecette{
   background-color: rgb(195,195,195);
   display:flex;
   flex-wrap: wrap;
@@ -130,7 +132,7 @@
   margin : 5px 5px 5px 0px;
   
 }
-.ingredient{
+  .ingredient{
   background-color:rgb(195,225,225);
   float: left;
   width: 24%;
@@ -184,12 +186,10 @@
        text-align: center;
      }
      p{
-
-
-      
+  
       text-align: center;
       font-family: 'Homenaje', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1rem;
      }
      .contingredient{
        min-height: 40vw;
