@@ -69,7 +69,7 @@
     if(!empty($onerecipe)){echo $onerecipe;}
     if(!empty($searchrecipe)){echo $searchrecipe;}
     if(!empty($searcherror)){echo $searcherror;}
-    
+    if(!empty($letteringredient)){echo $letteringredient;}
     
     ?>
 <div class="footer">

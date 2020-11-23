@@ -54,18 +54,20 @@
     margin-top: -40px;
     flex-wrap: wrap;
   }
-     
-
   a {
-    /* padding: 20px;
-    margin: 10px; */
-    
     font-family: 'Architects Daughter', cursive;
     font-size: 1.7rem;
-    
-    color:black;
-   
+    color:black ;
+  }   
+
+  .letter a{ 
+    color:white ;
   } 
+  .ficheingredient a{
+    font-size: 1.2rem;
+    text-align: center;
+    min-height:70px;
+  }
   
   .card {
      background-color: white;
@@ -188,8 +190,7 @@
       text-align: center;
       font-family: 'Homenaje', sans-serif;
       font-size: 1.5rem;
-
-    
-     
      }
-    
+     .contingredient{
+       min-height: 40vw;
+     }

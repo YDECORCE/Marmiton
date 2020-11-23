@@ -36,6 +36,8 @@ function ShowIngredientletters(){
     require('vue/searchbyingredient.php');
 }
 function ShowIngredient(){
+    $letters=new Ingredient;
+    $letters=$letters->IngredientLetter();
     $letter=$_GET['letter'];
     $ingredient=new Ingredient;
     $ingredient=$ingredient->ShowIngredient($letter);
