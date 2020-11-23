@@ -216,4 +216,7 @@
     
      
      }
-    
+    .letter{
+      display :l flex;
+      flex-wrap : wrap;
+    }

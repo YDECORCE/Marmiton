@@ -5,7 +5,7 @@ class Ingredient extends Connexion
 {
     function IngredientLetter()
     {
-        $letters = $this->connect()->prepare('SELECT LEFT (`nom_ingredients`,1) FROM ingredients GROUP BY LEFT(`nom_ingredients`,1)');
+        $letters = $this->connect()->prepare('SELECT LEFT (`nom_ingredients`,1) AS Letter FROM ingredients GROUP BY LEFT(`nom_ingredients`,1)');
         $letters->execute();
         $result = $letters->fetchAll();
         return $result;
