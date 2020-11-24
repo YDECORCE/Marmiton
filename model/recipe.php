@@ -47,5 +47,8 @@ function searchrecipes($search)
     $result = $req->fetchAll();
     return $result; 
     }
-}   
+} 
+
+
+
 ?>

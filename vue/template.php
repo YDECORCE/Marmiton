@@ -42,7 +42,7 @@
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="icon"> <img src="public/img/menu.png" width="50" height="50" alt=""></span>
         </button>
 
         <!-- Collapsible content -->
@@ -67,7 +67,7 @@
           <!-- Links -->
 
           <form method="GET" class="form-inline">
-            <div class="md-form my-0">
+            <div class="md-form my-0 ">
               <input class="form-control mr-sm-2" name="text" placeholder="Search" aria-label="Search">
               <button class="btn btn-success" type="submit" name="action" value="rechercher">valider</button>
             </div>
@@ -75,21 +75,110 @@
         </div>
         <!-- Collapsible content -->
 
-</header>
+  </header>
 
-        <div class="rowe">
-          <?php
+  <div class="rowe">
+    <?php
     if(!empty($loopfiverecipes)){echo $loopfiverecipes;}
     if(!empty($loopallrecipes)){echo $loopallrecipes;}
     if(!empty($onerecipe)){echo $onerecipe;}
     if(!empty($searchrecipe)){echo$searchrecipe;}
     // if(!empty($cequilfautafficher)){echo $cequilfautafficher;}
     ?>
-        </div>
+  </div>
 
-        <div class="footer">
-          <h2>Footer</h2>
+
+
+
+  </div>
+  <!-- Footer -->
+  <footer class="page-footer font-small indigo ">
+
+    <!-- Footer Links -->
+    
+      <div class="container-fluid text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row text-center">
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 mx-auto ringo">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Chef Cuisine</h5>
+
+           <img src="public/img/chef.png" height="160px" alt="">
+
+          </div>
+          <div class="col-md-4 col-lg-4 mx-auto">
+
+<!-- Links -->
+<h5 class="font-weight-bold text-uppercase mt-3 mb-4">RECETTES</h5>
+
+<ul class="list-unstyled">
+  <li>
+    <a href="#!">Very long link 1</a>
+  </li>
+  <li>
+    <a href="#!">Very long link 2</a>
+  </li>
+  <li>
+    <a href="#!">Very long link 3</a>
+  </li>
+  <li>
+    <a href="#!">Very long link 4</a>
+  </li>
+</ul>
+
+</div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CATÉGORIES</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+         
+          <!-- Grid column -->
+
         </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#">Chef Cuisine.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 </body>
 
 </html>
