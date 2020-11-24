@@ -4,7 +4,7 @@
 ob_start();
 // prevoir un if sur varaible ob_start pour afficher le résultat de la recherche
 
-echo'<div class="container contingredient">
+echo'<div class="container contingredient" >
 <h2> Index des recettes</h2>
 <p> Sélectionner la première lettre d\'un ingrédient</p>
     <div class="row justify-content-center">

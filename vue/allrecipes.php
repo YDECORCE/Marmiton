@@ -1,12 +1,12 @@
 <?php
 ob_start();
 
-echo'<h2>Toutes nos recettes.</h2><div class="container allrecipes">';
+echo'<h2>Toutes nos recettes.</h2><div class="container d-flex allrecipes p-0">';
 foreach ($recipes as $data){
-    echo"<div class='fiche'>
+    echo"<div class='col-12 col-sm-6 col-lg-4 m-0 p-0'><div class='card m-3'>
         <a href='index.php?action=detail&id=".$data['id_recettes']."'>".$data['nom_recettes']."</a>
-        <div class='fakeimg'><img src=".$data['image_recettes']." alt=".$data['nom_recettes']." style=' width:100%; display:block'></div>      
-        </div>";
+        <div ><img src=".$data['image_recettes']." alt=".$data['nom_recettes']." class='fakeimg'></div>      
+        </div></div>";
     }
 echo'</div>';
 

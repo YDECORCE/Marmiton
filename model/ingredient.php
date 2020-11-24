@@ -14,7 +14,7 @@ class Ingredient extends Connexion
     function ShowIngredient($letter)
     {
         $srch=strtoupper($letter)."%";
-        $ingredient= $this->connect()->prepare('SELECT * FROM `ingredients` WHERE `nom_ingredients` LIKE :letter');
+        $ingredient= $this->connect()->prepare('SELECT * FROM `ingredients` WHERE `nom_ingredients` LIKE :letter ORDER BY `nom_ingredients`');
         $ingredient->bindParam(':letter', $srch, PDO::PARAM_STR);
         $ingredient->execute();
         $result = $ingredient->fetchAll();
