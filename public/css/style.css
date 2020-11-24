@@ -202,7 +202,33 @@
   padding: 20px;
   margin: 10px;
 }
+.page-footer{
 
+  background-image:url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg");
+  background-size: cover;
+  color: wheat;
+  font-size: 25px;
+ 
+  }
+  .page-footer a {
+   color:red;
+   font-weight: bold;   
+  }
+  @media screen and (max-width: 800px) {
+   .page-footer{
+     height: 550px; 
+   }
+  }
+  .ringo img {
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+ }
+ .ringo:hover img {
+   -webkit-transform: scale(1.3);
+   transform: scale(1.3);
+ }
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   
