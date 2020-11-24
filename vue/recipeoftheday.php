@@ -24,7 +24,7 @@ foreach($otherrecipes as $data){
       <div class='fakeimg'><img src=".$data['image_recettes']." alt=".$data['nom_recettes']." style=' width:100%'></div>      
     </div></div>";
 }
-echo"</div>";
+echo"</div></div></div>";
 $loopfiverecipes =  ob_get_clean();
 require_once('template.php');
 ?>

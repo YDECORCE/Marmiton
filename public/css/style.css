@@ -15,7 +15,7 @@
 
   body {
     font-family: Arial;
-    padding: 20px;
+    /* padding: 20px; */
     background-image: url(../img/halloween-party.jpg);   
   }
   h2{
@@ -123,12 +123,6 @@
   } */
   
   /* Footer */
-  footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
   /* .container{
     max-width: 1290px;
     margin: 0 auto;
@@ -204,7 +198,7 @@
 }
 .page-footer{
 
-  background-image:url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg");
+  background-image:url("../img/footer_banner.png");
   background-size: cover;
   color: wheat;
   font-size: 25px;

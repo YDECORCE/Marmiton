@@ -72,9 +72,94 @@
     if(!empty($letteringredient)){echo $letteringredient;}
     
     ?>
-<footer>
-          <h2>Footer</h2>
+<!-- Footer -->
+<footer class="page-footer font-small indigo ">
+
+<!-- Footer Links -->
+
+  <div class="container-fluid text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row text-center">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 mx-auto ringo">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Chef Cuisine</h5>
+
+       <img src="public/img/chef.png" height="160px" alt="">
+
+      </div>
+      <div class="col-md-4 col-lg-4 mx-auto">
+
+<!-- Links -->
+<!-- <h5 class="font-weight-bold text-uppercase mt-3 mb-4">RECETTES</h5>
+
+<ul class="list-unstyled">
+<li>
+<a href="#!">Very long link 1</a>
+</li>
+<li>
+<a href="#!">Very long link 2</a>
+</li>
+<li>
+<a href="#!">Very long link 3</a>
+</li>
+<li>
+<a href="#!">Very long link 4</a>
+</li>
+</ul> -->
+
+</div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CATÉGORIES</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+     
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="#">Chef Cuisine.com</a>
+</div>
+<!-- Copyright -->
+
 </footer>
+<!-- Footer -->
 </body>
 
 </html>
