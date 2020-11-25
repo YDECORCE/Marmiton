@@ -12,7 +12,7 @@
 <body>
   <?php
     
-    if((date('H')>13)&&(date('H')<=23)) {$logo="A l'ardoise, ce soir...";}else{$logo="A l'ardoise, ce midi...";}
+    if((date('H')>=13)&&(date('H')<=23)) {$logo="A l'ardoise, ce soir...";}else{$logo="A l'ardoise, ce midi...";}
     
   ?>
 <header>

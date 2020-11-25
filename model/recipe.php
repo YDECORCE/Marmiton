@@ -41,9 +41,17 @@ function onerecipeingredient($id)
     }
 function searchrecipes($search)
     {
-        $srch="%".strtoupper(addcslashes($search,'_'))."%";
-        $req = $this->connect()->prepare('SELECT * FROM recettes WHERE recettes.nom_recettes LIKE :search');
-        $req->bindParam(':search', $srch, PDO::PARAM_STR);
+        $srch=trim($search);
+        $array=explode(' ',$srch);
+        // $srch="%".strtoupper(addcslashes($search,'_'))."%";
+        $sql="SELECT * FROM recettes
+        WHERE recettes.nom_recettes LIKE \"%$array[0]%\" ";
+        for ($i=1;$i<count($array);$i++)
+            {
+            $sql.="AND recettes.nom_recettes LIKE \"%$array[$i]%\" ";
+            }
+        $req = $this->connect()->prepare($sql);
+        // $req->bindParam(':search', $srch, PDO::PARAM_STR);
         $req->execute();
         $result = $req->fetchAll();
         return $result; 

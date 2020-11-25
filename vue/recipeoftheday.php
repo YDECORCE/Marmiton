@@ -8,7 +8,7 @@ echo"<div class='container p-0'>
 <div class='col-12 col-sm-12 col-lg-8'>";
 foreach ($dish as $data){
     
-    echo"<div class='card'>
+    echo"<div class='card top'>
     <a href='index.php?action=detail&id=".$data['id_recettes']."'>".$data['nom_recettes']."</a>
     <div class='fakeimg'><img src=".$data['image_recettes']." alt=".$data['nom_recettes']." style=' width:100%'></div>
     <div class='info'>

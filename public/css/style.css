@@ -63,6 +63,9 @@
     font-size: 1.7rem;
     color:black ;
   }   
+  .top a{
+    font-size: 1.5rem!important;
+  }
 
   a:hover{
     text-decoration: none;
