@@ -14,8 +14,7 @@
   /* Add a gray background color with some padding */
 
   body {
-    font-family: Arial;
-    /* padding: 20px; */
+    font-family: 'Homenaje', sans-serif;
     background-image: url(../img/halloween-party.jpg);   
   }
   h2{
@@ -37,7 +36,7 @@
     color: whitesmoke;
   }
   .nav-link   {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Architects Daughter', cursive;
     font-size: 20px;
     color: whitesmoke!important;
   }
@@ -53,15 +52,7 @@
     display:block;
   }
   
-  /* Header/Blog Title
-  .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
     
-    z-index: 3;
-  } */
-  
   .navbar{
     margin-top: -40px;
     flex-wrap: wrap;
@@ -115,23 +106,7 @@
     text-align: center;
     font-size: 1.1rem;
   }
-  /* Clear floats after the columns */
-  /* .rowe:after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
   
-  /* Footer */
-  /* .container{
-    max-width: 1290px;
-    margin: 0 auto;
-    min-height: 100vh;
-    align-content: center;
-    background-color:  #343a40;
-    background-image: url("public/img/pizza.jpg");
-  } */
-
   .image{
      justify-content: center;
      padding: 5px 0px 5px 0px;
@@ -143,10 +118,7 @@
     justify-content: space-around;
     margin :20px 5px 5px 5px;
   }
-  /* .detailrecette{
-    background-color: white; */
-  /* } */
-
+  
   .card h2{
     color: black;
   }
@@ -169,19 +141,7 @@
   border: 1px solid #000000;
   margin : 5px 5px 5px 0px;
 }
-/* .recette{
-  background-color: white;
-  float: right;
-  width: 74%;
-  padding-left: 20px;
-  text-align: center;
-  min-height:70vh;
-  margin : 5px 5px 5px 0px;
-  border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border: 1px solid #000000; */
-/* } */
+
 .allrecipes{
   display: flex;
   flex-wrap: wrap;
@@ -189,10 +149,8 @@
   min-height: 60vh;
 }
 .fiche{
-  /* width: 550px; */
   background-color: white;
   min-height: 440px;
-  /* align-items: flex-end; */
   padding: 20px;
   margin: 10px;
 }
@@ -209,11 +167,7 @@
    font-weight: bold;
    font-size:1.2rem;   
   }
-  @media screen and (max-width: 800px) {
-   .page-footer{
-     height: 550px; 
-   }
-  }
+  
   .ringo img {
    -webkit-transform: scale(1);
    transform: scale(1);
@@ -224,18 +178,29 @@
    -webkit-transform: scale(1.3);
    transform: scale(1.3);
  }
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-      margin:30px
-    }
-     }
-     
-     .contingredient{
+    
+  .contingredient{
        min-height: 40vw;
      }
+
 .logo{
   justify-content: flex-start;
 }
+
+.contingredient p{
+  color:white;
+}
+
+/*MOBILE */
+@media (max-width: 767px) {
+  .page-footer{height: 550px;}
+  h1{font-size: 40px;}
+  h2{font-size: 25px;}
+  }
+
+/*TABLETTE -> PETIT ECRAN ORDI */
+@media (min-width: 768px) and (max-width:1100px) {
+  h1{font-size: 60px;}
+  h2{font-size: 37px;}
+}
+

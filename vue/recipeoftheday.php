@@ -2,7 +2,10 @@
 ob_start();
 // $starrecipe = array_slice($fiverecipes,0, 1); 
 // $otherrecipes = array_slice($fiverecipes,1, 4); 
-echo"<div class='container p-0'><div class='row w-100'><div class='col-12 col-sm-12 col-lg-8'>";
+echo"<div class='container p-0'>
+<h2>Notre suggestion du jour</h2>
+<div class='row w-100'>
+<div class='col-12 col-sm-12 col-lg-8'>";
 foreach ($dish as $data){
     
     echo"<div class='card'>
