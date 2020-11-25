@@ -36,14 +36,14 @@
     font-weight: bolder;
     color: whitesmoke;
   }
-  li .nav-link  {
+  .nav-link   {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    color: whitesmoke;
+    color: whitesmoke!important;
   }
   .menu{
     width: 100%;
-    padding-left: 450px;
+    justify-content: space-between;
   
   }
   .fakeimg{
@@ -201,12 +201,13 @@
   background-image:url("../img/footer_banner.png");
   background-size: cover;
   color: wheat;
-  font-size: 25px;
+  font-size: 15px;
  
   }
   .page-footer a {
-   color:red;
-   font-weight: bold;   
+   color :wheat;
+   font-weight: bold;
+   font-size:1.2rem;   
   }
   @media screen and (max-width: 800px) {
    .page-footer{
@@ -235,3 +236,6 @@
      .contingredient{
        min-height: 40vw;
      }
+.logo{
+  justify-content: flex-start;
+}

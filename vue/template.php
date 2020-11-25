@@ -17,31 +17,27 @@
   ?>
 <header>
        <!--Navbar-->
-      <nav class="navbar navbar-expand-lg">
-
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="row logo w-100">
         <!-- Navbar brand -->
-        <a class="navbar-brand mt-5" href="index.php"><h1><?php echo $logo; ?></h1></a>
-
+            <a class="navbar-brand mt-5" href="index.php"><h1><?php echo $logo; ?></h1></a>
+        </div>
+        <div class="row w-100 menu">
         <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <span class="icon"> <img src="public/img/menu.png" width="50" height="50" alt=""></span>
+            </button>
 
         <!-- Collapsible content -->
-        <div class="collapse navbar-collapse menu w-100 d-flex justify-content-between" id="basicExampleNav">
+        <div class="collapse navbar-collapse menu w-100 " id="basicExampleNav">
 
           <!-- Links -->
-          <ul class="navbar-nav d-flex justify-content-between" style="width:50%">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="index.php">Accueil
+          <ul class="navbar-nav w-50" style="justify-content:space-between">
+              <li class="nav-item">
+                <a class="nav-link" href="index.php?action=all">Nos Recettes
                 <span class="sr-only">(current)</span>
-              </a>
-            </li> -->
-            <li class="nav-item active">
-              <a class="nav-link" href="index.php?action=all">Nos Recettes
-              <span class="sr-only">(current)</span>
-             </a>
+                </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.php?action=searchingredient">Recherche par ingrédient</a>
@@ -58,6 +54,7 @@
                </div>
           </form>
         </div>
+        </div>
       </nav>
 
         <!-- Collapsible content -->
@@ -73,91 +70,46 @@
     
     ?>
 <!-- Footer -->
-<footer class="page-footer font-small indigo ">
+<footer class="page-footer font-small ">
 
 <!-- Footer Links -->
 
-  <div class="container-fluid text-center text-md-left mt-5">
+  <div class="container-fluid text-center text-md-left pt-5">
 
     <!-- Grid row -->
-    <div class="row text-center">
+    <div class="row text-center" style="align-items:flex-end">
 
       <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 mx-auto ringo">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Chef Cuisine</h5>
-
-       <img src="public/img/chef.png" height="160px" alt="">
-
+      <div class="col-md-4 col-lg-3 mx-auto ringo">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Chef Cuisine</h5>
+            <img src="public/img/chef.png" height="160px" alt="">
       </div>
-      <div class="col-md-4 col-lg-4 mx-auto">
-
-<!-- Links -->
-<!-- <h5 class="font-weight-bold text-uppercase mt-3 mb-4">RECETTES</h5>
-
-<ul class="list-unstyled">
-<li>
-<a href="#!">Very long link 1</a>
-</li>
-<li>
-<a href="#!">Very long link 2</a>
-</li>
-<li>
-<a href="#!">Very long link 3</a>
-</li>
-<li>
-<a href="#!">Very long link 4</a>
-</li>
-</ul> -->
-
-</div>
+      <div class="col-md-4 col-lg-6 px-auto" >
+          <div class="footer-copyright text-center py-3">© 2020 Copyright: Chef Cuisine.com</div>
+      </div>
       <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 mx-auto">
+      <div class="col-md-4 col-lg-3 mx-auto">
 
         <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CATÉGORIES</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="index.php?action=all">Nos recettes</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="index.php?action=searchingredient">Recherche par ingrédient</a>
           </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
+          </ul>
 
       </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-     
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="#">Chef Cuisine.com</a>
-</div>
-<!-- Copyright -->
-
+    </div>
+  
 </footer>
 <!-- Footer -->
 </body>
