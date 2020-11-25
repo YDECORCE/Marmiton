@@ -17,7 +17,7 @@ function showfiverecipes()
     $entree=$entree->randomrecipe('Entrée');
     $dish=$dish->randomrecipe('Plat');
     $dessert=$dessert->randomrecipe('Dessert');
-    require('vue\recipeoftheday.php');
+    require('vue/recipeoftheday.php');
     }
 function showrecipedetail()
     {
