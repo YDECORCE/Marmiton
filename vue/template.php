@@ -20,7 +20,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="row logo w-100">
         <!-- Navbar brand -->
-            <a class="navbar-brand mt-5" href="index.php"><h1><?php echo $logo; ?></h1></a>
+            <a class="navbar-brand mt-5 ml-5" href="index.php"><h1><?php echo $logo; ?></h1></a>
         </div>
         <div class="row w-100 menu">
         <!-- Collapse button -->
@@ -74,7 +74,7 @@
 
 <!-- Footer Links -->
 
-  <div class="container-fluid text-center text-md-left pt-5">
+  <div class="container-fluid text-center text-md-left py-3">
 
     <!-- Grid row -->
     <div class="row text-center" style="align-items:flex-end">

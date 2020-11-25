@@ -51,6 +51,7 @@ function searchrecipes($search)
             {
             $sql.="AND ((recettes.nom_recettes LIKE \"%$array[$i]%\") OR (ingredients.nom_ingredients LIKE \"%$array[$i]%\")) ";
             }
+        $sql.=" GROUP BY recettes.id_recettes";   
         $req = $this->connect()->prepare($sql);
         $req->execute();
         $result = $req->fetchAll();
