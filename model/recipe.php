@@ -43,15 +43,15 @@ function searchrecipes($search)
     {
         $srch=trim($search);
         $array=explode(' ',$srch);
-        // $srch="%".strtoupper(addcslashes($search,'_'))."%";
         $sql="SELECT * FROM recettes
-        WHERE recettes.nom_recettes LIKE \"%$array[0]%\" ";
+        INNER JOIN make ON recettes.id_recettes=make.id_recettes
+        INNER JOIN ingredients ON ingredients.id_ingredients=make.id_ingredients
+        WHERE ((recettes.nom_recettes LIKE \"%$array[0]%\") OR (ingredients.nom_ingredients LIKE \"%$array[0]%\")) ";
         for ($i=1;$i<count($array);$i++)
             {
-            $sql.="AND recettes.nom_recettes LIKE \"%$array[$i]%\" ";
+            $sql.="AND ((recettes.nom_recettes LIKE \"%$array[$i]%\") OR (ingredients.nom_ingredients LIKE \"%$array[$i]%\")) ";
             }
         $req = $this->connect()->prepare($sql);
-        // $req->bindParam(':search', $srch, PDO::PARAM_STR);
         $req->execute();
         $result = $req->fetchAll();
         return $result; 
