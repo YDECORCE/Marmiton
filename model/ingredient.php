@@ -18,9 +18,6 @@ class Ingredient extends Connexion
         $ingredient->bindParam(':letter', $srch, PDO::PARAM_STR);
         $ingredient->execute();
         $result = $ingredient->fetchAll();
-        // echo $srch;
-        // var_dump($result);
-        // die;
         return $result;
     }
 }

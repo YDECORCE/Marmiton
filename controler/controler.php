@@ -11,8 +11,12 @@ function showallrecipes()
 
 function showfiverecipes()
     {
-    $fiverecipes=new Recipe;
-    $fiverecipes=$fiverecipes->random();
+    $entree=new Recipe;
+    $dish=new Recipe;
+    $dessert=new Recipe;
+    $entree=$entree->randomrecipe('Entrée');
+    $dish=$dish->randomrecipe('Plat');
+    $dessert=$dessert->randomrecipe('Dessert');
     require('vue\recipeoftheday.php');
     }
 function showrecipedetail()
