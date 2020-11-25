@@ -18,9 +18,7 @@ elseif(isset($_GET['action'])&&($_GET['action']=='searchingredient')&&(isset($_G
 elseif (isset($_GET['action'])&&($_GET['action']=='recipebyingredient')){
     searchrecipebyingredient();
 }
-else
-{
+else{
     showfiverecipes();
 }
-
 ?>

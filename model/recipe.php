@@ -11,12 +11,13 @@ function allrecipes()
         $result = $recipes->fetchAll();
         return $result;
     }
-public function random()
+public function randomrecipe($type)
     {
-    $recipes = $this->connect()->prepare('SELECT * FROM recettes WHERE id_recettes order by rand() LIMIT 5' );
-    $recipes->execute();
-    $result = $recipes->fetchAll();
-    return $result;
+        $recipes = $this->connect()->prepare('SELECT * FROM recettes WHERE type_recettes= :plat order by rand() LIMIT 1' );
+        $recipes->bindParam(':plat', $type, PDO::PARAM_STR);
+        $recipes->execute();
+        $result = $recipes->fetchAll();
+        return $result;
     }
 function detailonerecipe($id)
     {
@@ -40,23 +41,23 @@ function onerecipeingredient($id)
     }
 function searchrecipes($search)
     {
-    $srch="%".strtoupper(addcslashes($search,'_'))."%";
-    $req = $this->connect()->prepare('SELECT * FROM recettes WHERE recettes.nom_recettes LIKE :search');
-    $req->bindParam(':search', $srch, PDO::PARAM_STR);
-    $req->execute();
-    $result = $req->fetchAll();
-    return $result; 
+        $srch="%".strtoupper(addcslashes($search,'_'))."%";
+        $req = $this->connect()->prepare('SELECT * FROM recettes WHERE recettes.nom_recettes LIKE :search');
+        $req->bindParam(':search', $srch, PDO::PARAM_STR);
+        $req->execute();
+        $result = $req->fetchAll();
+        return $result; 
     }
 function SearchRecipesbyIngredient($ingredient)
     {
-    $req = $this->connect()->prepare('SELECT * FROM recettes
-    INNER join make on recettes.id_recettes=make.id_recettes
-    inner join ingredients on make.id_ingredients=ingredients.id_ingredients
-    where ingredients.id_ingredients=:id');
-    $req->bindParam(':id', $ingredient, PDO::PARAM_INT);
-    $req->execute();
-    $result = $req->fetchAll();
-    return $result; 
+        $req = $this->connect()->prepare('SELECT * FROM recettes
+        INNER join make on recettes.id_recettes=make.id_recettes
+        inner join ingredients on make.id_ingredients=ingredients.id_ingredients
+        where ingredients.id_ingredients=:id');
+        $req->bindParam(':id', $ingredient, PDO::PARAM_INT);
+        $req->execute();
+        $result = $req->fetchAll();
+        return $result; 
     }
 }   
 ?>
